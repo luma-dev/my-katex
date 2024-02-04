@@ -1,0 +1,56 @@
+{
+  "type": "module",
+  "name": "@luma-dev/my-katex",
+  "version": "0.0.0-dev",
+  "description": "",
+  "files": [
+    "dist",
+    "!*.tsbuildinfo"
+  ],
+  "exports": {
+    ".": "./dist/main.js",
+    "./react": "./dist/react.js"
+  },
+  "scripts": {
+    "lint": "eslint --ext .ts,.tsx . && prettier --list-different .",
+    "lint-fix": "eslint --ext .ts,.tsx . --fix && prettier --write .",
+    "build": "shx rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "typecheck-watch": "tsc --noEmit --watch",
+    "test": "vitest",
+    "example": "vite example --port 5173 --host"
+  },
+  "keywords": [],
+  "author": "Luma <world@luma.email>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/katex": "^0.16.7",
+    "@types/node": "^20.11.4",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "semantic-release": "^23.0.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "packageManager": "npm@10.3.0+sha256.ec92e7332e3f7aef6feb2b3c9585fde534cd56905cf26e77debc69e4e2b44892",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "inline-style-parser": "^0.2.2",
+    "katex": "^0.16.9",
+    "rehype-parse": "^9.0.0",
+    "unified": "^11.0.4"
+  }
+}

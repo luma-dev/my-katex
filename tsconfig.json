@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "outDir": "dist",
+    "declaration": true,
+    "jsx": "react-jsx",
+    "incremental": true
+  },
+  "include": ["."]
+}
