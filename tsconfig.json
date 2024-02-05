@@ -3,6 +3,7 @@
     "strict": true,
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
     "target": "ES2022",
     "outDir": "dist",
